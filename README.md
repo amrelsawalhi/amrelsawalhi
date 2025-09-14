@@ -7,7 +7,7 @@ I build business intelligence solutions and uncover actionable insights with a u
 ## 🚀 Featured Projects
 
 - **[DipSignal](https://github.com/amrelsawalhi/DipSignal)** - AI-powered market sentiment analysis with BI dashboards
-- **[LoL Analytics](https://github.com/amrelsawalhi/leagueoflegends)** - Performance insights platform for strategic decision-making
+- **[LoL Analytics](https://github.com/amrelsawalhi/leagueoflegends)** - Performance insights platform for the League of Legends game
 - **[Dijamour](https://github.com/amrelsawalhi/Dijamour-public)** - Wedding venue discovery app with real-time data sync
 - **[FeelyText](https://github.com/amrelsawalhi/sentiment-analysis)** - Customer sentiment analysis for business insights
 
@@ -26,3 +26,4 @@ I build business intelligence solutions and uncover actionable insights with a u
 ---
 
 *Healthcare business professional transitioning to BI analytics with international experience.*
+
