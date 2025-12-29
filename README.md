@@ -21,10 +21,10 @@ I build business intelligence solutions and uncover actionable insights with a u
 
 - **Email**: amr.elsawalhi.business@gmail.com
 - **LinkedIn**: [amrelsawalhi](https://www.linkedin.com/in/amrelsawalhi/)
-       - **Portfolio**: [amrelsawalhi.github.io/resume](https://amrelsawalhi.github.io/resume/)
 
 ---
 
 *Healthcare business professional transitioning to BI analytics with international experience.*
+
 
 
