@@ -1,29 +1,35 @@
-# 👋 Hi, I'm Amr El Sawalhi
+👋 Hi, I'm Amr El Sawalhi
+Data Engineer | Cloud Architecture & Scalable Pipelines | Microsoft DP-700
 
-*Data Engineer**
+I build robust, end-to-end data pipelines and analytical platforms, leveraging modern cloud infrastructure to solve complex data challenges.
 
-I build business intelligence solutions and uncover actionable insights with a unique perspective from 8+ years in pharmaceutical sales. My background gives me deep insights into customer needs and market dynamics.
+🚀 Featured Projects
+DipSignal - Enterprise-grade financial data pipeline orchestrating 100+ assets.
 
-## 🚀 Featured Projects
+Architecture: Scalable "Hub & Spoke" design using Dagster for orchestration and PostgreSQL for warehousing.
+Performance: Optimized ETL processes using Polars and SQLAlchemy for high-throughput data ingestion (5x faster than standard methods).
+DevOps: Fully containerized with Docker, capable of local or cloud deployment.
+Features: Automated diverse data collection (Crypto/Stocks/Commodities), Star Schema modeling, and integrated AI analytics.
+LoL Analytics - Performance insights platform for the League of Legends game.
 
-- **[DipSignal](https://github.com/amrelsawalhi/dipsignal-v1)** - a fully automated data engineering pipeline that collects, transforms, and analyzes market data across 61 assets (crypto, stocks, commodities)
-- **[LoL Analytics](https://github.com/amrelsawalhi/leagueoflegends)** - Performance insights platform for the League of Legends game
-- **[Dijamour](https://github.com/amrelsawalhi/Dijamour-public)** - Wedding venue discovery app with real-time data sync
-- **[FeelyText](https://github.com/amrelsawalhi/sentiment-analysis)** - Customer sentiment analysis for business insights
+Dijamour - Wedding venue discovery app with real-time data sync.
 
-## 🛠 Skills
+FeelyText - Customer sentiment analysis for business insights.
 
-**BI Analytics:** Python, SQL, Data Analysis, Data Visualization  
-**Tools:** PostgreSQL, Power BI, Streamlit, Git  
-**Business:** Market Analysis, Customer Relations, Business Intelligence
+🛠 Skills
+Data Engineering:
+Pipeline Orchestration (Dagster), ETL/ELT Design, Data Modeling (Star/Snowflake Schemas), Data Warehousing, API Integration
 
-## 📫 Connect
+Cloud & Infrastructure:
+Microsoft Azure, Docker, Containerization, CI/CD, Git
 
-- **Email**: amr.elsawalhi.business@gmail.com
-- **LinkedIn**: [amrelsawalhi](https://www.linkedin.com/in/amrelsawalhi/)
+Certifications:
+Microsoft DP-700 (Data Engineering)
 
----
+Tools & Languages:
+Python (Polars, Pandas), SQL (PostgreSQL), Streamlit, Power BI
 
-
-
-
+📫 Connect
+Email: 
+amr.elsawalhi.business@gmail.com
+LinkedIn: amrelsawalhi
