@@ -18,7 +18,7 @@
 
 ## 🚀 Featured Projects
 
-### 🔹 [DipSignal](https://github.com/amrelsawalhi/dipsignal-v1)
+### 🔹 [DipSignal](https://dipsignal.vercel.app/)
 **Enterprise-grade financial data pipeline tracking and analyzing 100+ assets.**
 - **Architecture:** Scalable "Hub & Spoke" design using **Dagster** for orchestration and **PostgreSQL** for warehousing.
 - **Performance:** Optimized ETL processes using **Polars** and **SQLAlchemy** (5x faster throughput).
@@ -61,4 +61,5 @@ Customer sentiment analysis for business insights.
 ![SQL](https://img.shields.io/badge/SQL-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)
 
 ---
+
 
