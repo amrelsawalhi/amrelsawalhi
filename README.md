@@ -24,7 +24,7 @@
 - **AI Agents:** Integrated **Google Gemini** agents for automated technical analysis, macro summaries, and portfolio strategy.
 - **Architecture:** Professional "Hub & Spoke" design using **Dagster** for orchestration and **PostgreSQL** (Star Schema).
 - **Performance:** High-throughput ETL engine using **Polars** and **SQLAlchemy** (5x faster than standard methods).
-- **Stack:** ![Dagster](https://img.shields.io/badge/Dagster-Unreleased-red) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?logo=postgresql&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+- **Stack:** ![Dagster](https://img.shields.io/badge/Dagster-4952CB?style=flat&logo=dagster&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?logo=postgresql&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 
 ### 🔹 [Dijamour](https://github.com/amrelsawalhi/Dijamour-public)
 **High-performance wedding venue discovery platform for the Egyptian market.**
@@ -77,3 +77,4 @@
 ![SQL](https://img.shields.io/badge/SQL-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)
 
 ---
+
