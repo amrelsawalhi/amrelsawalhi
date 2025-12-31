@@ -19,10 +19,11 @@
 ## 🚀 Featured Projects
 
 ### 🔹 [DipSignal](https://dipsignal.vercel.app/) | [Repository](https://github.com/amrelsawalhi/dipsignal-v1)
-**Enterprise-grade financial data pipeline orchestrating 61+ assets.**
-- **Architecture:** Scalable "Hub & Spoke" design using **Dagster** for orchestration and **PostgreSQL** for warehousing.
-- **Performance:** Optimized ETL processes using **Polars** and **SQLAlchemy** (5x faster throughput).
-- **DevOps:** Fully containerized with **Docker**, capable of local or cloud deployment.
+**AI-Powered Financial Intelligence Platform & Automated Data Pipeline.**
+- **Core:** End-to-end sovereign data appliance orchestrating ingestion for **Crypto, Stocks, and Commodities**.
+- **AI Agents:** Integrated **Google Gemini** agents for automated technical analysis, macro summaries, and portfolio strategy.
+- **Architecture:** Professional "Hub & Spoke" design using **Dagster** for orchestration and **PostgreSQL** (Star Schema).
+- **Performance:** High-throughput ETL engine using **Polars** and **SQLAlchemy** (5x faster than standard methods).
 - **Stack:** ![Dagster](https://img.shields.io/badge/Dagster-Unreleased-red) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?logo=postgresql&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 
 ### 🔹 [Dijamour](https://github.com/amrelsawalhi/Dijamour-public)
