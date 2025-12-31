@@ -1,4 +1,5 @@
 👋 Hi, I'm Amr El Sawalhi
+
 Data Engineer | Cloud Architecture & Scalable Pipelines | Microsoft DP-700
 
 I build robust, end-to-end data pipelines and analytical platforms, leveraging modern cloud infrastructure to solve complex data challenges.
@@ -33,3 +34,4 @@ Python (Polars, Pandas), SQL (PostgreSQL), Streamlit, Power BI
 Email: 
 amr.elsawalhi.business@gmail.com
 LinkedIn: amrelsawalhi
+
