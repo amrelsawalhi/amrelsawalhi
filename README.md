@@ -18,8 +18,8 @@
 
 ## 🚀 Featured Projects
 
-### 🔹 [DipSignal](https://dipsignal.vercel.app/)
-**Enterprise-grade financial data pipeline tracking and analyzing 100+ assets.**
+### 🔹 [DipSignal](https://github.com/amrelsawalhi/dipsignal-v1) | [Live Demo](https://dipsignal.vercel.app/)
+**Enterprise-grade financial data pipeline orchestrating 61+ assets.**
 - **Architecture:** Scalable "Hub & Spoke" design using **Dagster** for orchestration and **PostgreSQL** for warehousing.
 - **Performance:** Optimized ETL processes using **Polars** and **SQLAlchemy** (5x faster throughput).
 - **DevOps:** Fully containerized with **Docker**, capable of local or cloud deployment.
@@ -30,14 +30,29 @@
 - **Mobile Architecture:** Cross-platform **React Native** app built with **Expo SDK 53** and **TypeScript**.
 - **Performance:** Sub-second load times via multi-layer caching (Memory/AsyncStorage) and **Hermes Engine**.
 - **Backend:** Serverless **Supabase Edge Functions** with **PostgreSQL** database.
-- **Features:** Full Arabic/English bilingual support (RTL), real-time search, and offline-capable architecture.
 - **Stack:** ![React Native](https://img.shields.io/badge/React_Native-20232A?logo=react&logoColor=61DAFB) ![Expo](https://img.shields.io/badge/Expo-000020?logo=expo&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)
 
-### 🔹 [LoL Analytics](https://github.com/amrelsawalhi/leagueoflegends)
-Performance insights platform for the League of Legends game.
+## 💡 Hobby & Experiments
 
-### 🔹 [FeelyText](https://github.com/amrelsawalhi/sentiment-analysis)
-Customer sentiment analysis for business insights.
+### 🔸 [LoL Analytics](https://github.com/amrelsawalhi/leagueoflegends) | [Live Demo](https://lol-stats.streamlit.app/)
+**End-to-end data pipeline & dashboard for League of Legends ranked matches.**
+- **Pipeline:** Automated ETL using **GitHub Actions**, fetching data from Riot Games API to **PostgreSQL**.
+- **Data Modeling:** Designed a **Snowflake Schema** optimized for analytical queries.
+- **Visualization:** Interactive **Power BI** dashboard and **Streamlit** app for champion stats.
+- **Stack:** ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?logo=powerbi&logoColor=black) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?logo=postgresql&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=github-actions&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+
+### 🔸 [FeelyText](https://github.com/amrelsawalhi/sentiment-analysis) | [Live Demo](https://feelytext.streamlit.app/)
+**Interactive real-time sentiment analysis tool with extensive NLP pipeline.**
+- **ML Ops:** Automated training pipeline that triggers when new data is detected.
+- **NLP:** Custom processing with **spaCy** (Lemmatization) and **TF-IDF** vectorization.
+- **Feedback Loop:** Interactive **Streamlit** UI allowing users to correct predictions for model fine-tuning.
+- **Stack:** ![Scikit-Learn](https://img.shields.io/badge/scikit_learn-F7931E?logo=scikit-learn&logoColor=white) ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white) ![spaCy](https://img.shields.io/badge/spaCy-09A3D5?logo=spacy&logoColor=white)
+
+### 🔸 [Jumia Price Tracker](https://github.com/amrelsawalhi/jumia-price-etl-streamlit) | [Live Demo](https://jumia-price-scraper.streamlit.app/)
+**Web scraping tool for tracking e-commerce prices in Egypt.**
+- **Scraping:** Robust extraction using **BeautifulSoup** and **Requests** with randomized user agents.
+- **Interface:** Clean **Streamlit** dashboard for searching multiple products and exporting CSVs.
+- **Stack:** ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white) ![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-black?logo=python&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 
 ---
 
@@ -61,5 +76,3 @@ Customer sentiment analysis for business insights.
 ![SQL](https://img.shields.io/badge/SQL-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)
 
 ---
-
-
