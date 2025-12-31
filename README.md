@@ -19,17 +19,22 @@
 ## 🚀 Featured Projects
 
 ### 🔹 [DipSignal](https://github.com/amrelsawalhi/dipsignal-v1)
-**Enterprise-grade financial data pipeline orchestrating 61+ assets.**
+**Enterprise-grade financial data pipeline tracking and analyzing 100+ assets.**
 - **Architecture:** Scalable "Hub & Spoke" design using **Dagster** for orchestration and **PostgreSQL** for warehousing.
 - **Performance:** Optimized ETL processes using **Polars** and **SQLAlchemy** (5x faster throughput).
 - **DevOps:** Fully containerized with **Docker**, capable of local or cloud deployment.
 - **Stack:** ![Dagster](https://img.shields.io/badge/Dagster-Unreleased-red) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?logo=postgresql&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 
+### 🔹 [Dijamour](https://github.com/amrelsawalhi/Dijamour-public)
+**High-performance wedding venue discovery platform for the Egyptian market.**
+- **Mobile Architecture:** Cross-platform **React Native** app built with **Expo SDK 53** and **TypeScript**.
+- **Performance:** Sub-second load times via multi-layer caching (Memory/AsyncStorage) and **Hermes Engine**.
+- **Backend:** Serverless **Supabase Edge Functions** with **PostgreSQL** database.
+- **Features:** Full Arabic/English bilingual support (RTL), real-time search, and offline-capable architecture.
+- **Stack:** ![React Native](https://img.shields.io/badge/React_Native-20232A?logo=react&logoColor=61DAFB) ![Expo](https://img.shields.io/badge/Expo-000020?logo=expo&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)
+
 ### 🔹 [LoL Analytics](https://github.com/amrelsawalhi/leagueoflegends)
 Performance insights platform for the League of Legends game.
-
-### 🔹 [Dijamour](https://github.com/amrelsawalhi/Dijamour-public)
-Wedding venue discovery app with real-time data sync.
 
 ### 🔹 [FeelyText](https://github.com/amrelsawalhi/sentiment-analysis)
 Customer sentiment analysis for business insights.
@@ -56,3 +61,4 @@ Customer sentiment analysis for business insights.
 ![SQL](https://img.shields.io/badge/SQL-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)
 
 ---
+
