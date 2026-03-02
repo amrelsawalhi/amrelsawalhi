@@ -134,7 +134,10 @@ const Projects = () => {
               {/* Image side */}
               <div className="relative h-[300px] lg:h-auto overflow-hidden bg-slate-900 border-b lg:border-b-0 lg:border-r border-white/10">
                 {project.image ? (
-                  <img src={project.image} alt={project.name} className="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-700" />
+                  <>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={project.image} alt={project.name} className="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-700" />
+                  </>
                 ) : (
                   <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-cyan-900/40 to-violet-900/40">
                     {project.icon}
@@ -208,6 +211,7 @@ const Projects = () => {
               {/* Image Header */}
               {project.image && (
                 <div className="h-48 overflow-hidden relative border-b border-white/5">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={project.image} alt={project.name} className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-300" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#050a14] to-transparent opacity-80" />
                   <div className="absolute bottom-4 left-4 flex gap-2">

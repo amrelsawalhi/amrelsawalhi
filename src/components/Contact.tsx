@@ -103,10 +103,10 @@ const Contact = () => {
         >
           <span className="chip chip-violet mb-4 inline-block">Get In Touch</span>
           <h2 className="section-title mb-5">
-            <span className="gradient-text">Let's Connect</span>
+            <span className="gradient-text">Let&apos;s Connect</span>
           </h2>
           <p className="text-muted text-lg max-w-2xl mx-auto">
-            Ready to discuss data engineering opportunities? Let's explore how my technical and business background can add value.
+            Ready to discuss data engineering opportunities? Let&apos;s explore how my technical and business background can add value.
           </p>
         </motion.div>
 
@@ -175,7 +175,7 @@ const Contact = () => {
                     <CheckCircle className="w-8 h-8 text-cyan-400" />
                   </div>
                   <h3 className="text-xl font-bold text-bright mb-2">Message Sent!</h3>
-                  <p className="text-muted">Thanks for reaching out. I'll get back to you shortly.</p>
+                  <p className="text-muted">Thanks for reaching out. I&apos;ll get back to you shortly.</p>
                 </motion.div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
