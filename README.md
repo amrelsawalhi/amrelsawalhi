@@ -1,21 +1,21 @@
 # 👋 Hi, I'm Amr El Sawalhi
 
-**Data Engineer**
+**BI Analytics Professional**
 
-I build data engineering solutions with a unique perspective from 8+ years in pharmaceutical sales. My background gives me deep insights into customer needs and market dynamics.
+I build business intelligence solutions and uncover actionable insights with a unique perspective from 8+ years in pharmaceutical sales. My background gives me deep insights into customer needs and market dynamics.
 
 ## 🚀 Featured Projects
 
-- **[DipSignal](https://github.com/amrelsawalhi/DipSignal)** - AI-powered crypto trading pipeline
-- **[LoL Analytics](https://github.com/amrelsawalhi/leagueoflegends)** - League of Legends champions data pipeline
-- **[Dijamour](https://github.com/amrelsawalhi/Dijamour-public)** - Wedding venue discovery app
-- **[FeelyText](https://github.com/amrelsawalhi/sentiment-analysis)** - Sentiment analysis tool
+- **[DipSignal](https://github.com/amrelsawalhi/DipSignal)** - AI-powered market sentiment analysis with BI dashboards
+- **[LoL Analytics](https://github.com/amrelsawalhi/leagueoflegends)** - Performance insights platform for strategic decision-making
+- **[Dijamour](https://github.com/amrelsawalhi/Dijamour-public)** - Wedding venue discovery app with real-time data sync
+- **[FeelyText](https://github.com/amrelsawalhi/sentiment-analysis)** - Customer sentiment analysis for business insights
 
 ## 🛠 Skills
 
-**Data Engineering:** Python, SQL, ETL, Data Modeling  
+**BI Analytics:** Python, SQL, Data Analysis, Data Visualization  
 **Tools:** PostgreSQL, Power BI, Streamlit, Git  
-**Business:** Market Analysis, Customer Relations
+**Business:** Market Analysis, Customer Relations, Business Intelligence
 
 ## 📫 Connect
 
@@ -25,4 +25,4 @@ I build data engineering solutions with a unique perspective from 8+ years in ph
 
 ---
 
-*Healthcare business professional transitioning to data engineering with international experience.*
+*Healthcare business professional transitioning to BI analytics with international experience.*

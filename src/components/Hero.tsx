@@ -1,150 +1,178 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Download, ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
+import { Download, ArrowRight, Github, Linkedin, Mail, ChevronDown } from 'lucide-react';
 
 const Hero = () => {
   const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    const el = document.querySelector(href);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-purple-50">
-      <div className="container-max section-padding text-center">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden grid-bg"
+    >
+      {/* Background glow orbs */}
+      <div className="bg-glow w-[600px] h-[600px] bg-cyan-500 top-[-200px] left-[-200px]" />
+      <div className="bg-glow w-[500px] h-[500px] bg-violet-600 bottom-[-150px] right-[-150px]" />
+      <div className="bg-glow w-[300px] h-[300px] bg-cyan-400 bottom-[20%] left-[30%]" style={{ opacity: 0.07 }} />
+
+      <div className="container-max section-padding relative z-10 text-center">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.9, ease: 'easeOut' }}
           className="max-w-4xl mx-auto"
         >
-                     {/* Name Display */}
-           <motion.h2
-             initial={{ opacity: 0, y: 20 }}
-             animate={{ opacity: 1, y: 0 }}
-             transition={{ delay: 0.2, duration: 0.8 }}
-             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-gray-800"
-           >
-             Amr El Sawalhi
-           </motion.h2>
+          {/* Badge */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className="inline-flex items-center gap-2 mb-8"
+          >
+            <span className="chip">
+              <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
+              Microsoft Certified: Fabric Data Engineer
+            </span>
+          </motion.div>
 
-          {/* Main Headline */}
+          {/* Name */}
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.7 }}
+            className="text-lg md:text-xl font-medium text-slate-400 mb-3 tracking-widest uppercase"
+          >
+            Amr Elsawalhi
+          </motion.h2>
+
+          {/* Main headline */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6"
+            transition={{ delay: 0.4, duration: 0.8 }}
+            className="section-title mb-6"
           >
-            <span className="gradient-text">Healthcare Professional</span>
+            <span className="gradient-text">Data Engineer</span>
             <br />
-            <span className="text-gray-800">→ BI Analytics</span>
+            <span className="text-slate-200">Building Scalable</span>
+            <br />
+            <span className="text-slate-200">Data Pipelines</span>
           </motion.h1>
 
           {/* Subtitle */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed"
+            transition={{ delay: 0.55, duration: 0.8 }}
+            className="text-lg md:text-xl text-muted mb-10 max-w-2xl mx-auto leading-relaxed"
           >
-            Leveraging 8+ years of international business experience to build business intelligence solutions and uncover actionable insights
+            Architecting resilient ELT pipelines from the ground up — orchestrating complex workflows with Dagster, PostgreSQL, and Azure to transform raw data into production-ready assets.
           </motion.p>
 
-          {/* Key Message */}
+          {/* Stats row */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7, duration: 0.8 }}
-            className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 mb-8 shadow-lg border border-gray-200"
+            transition={{ delay: 0.65, duration: 0.8 }}
+            className="flex flex-wrap justify-center gap-6 mb-10"
           >
-            <p className="text-lg text-gray-700 italic">
-              &ldquo;Healthcare business professional with 8+ years of international sales experience transitioning to business intelligence analytics. My background in pharmaceutical sales provides unique insights into customer behavior, market dynamics, and business intelligence needs.&rdquo;
-            </p>
+            {[
+              { value: '4+', label: 'Years in Data' },
+              { value: '10+', label: 'Tools & Technologies' },
+              { value: '5+', label: 'Production Projects' },
+            ].map((stat) => (
+              <div key={stat.label} className="glass-card px-6 py-4 text-center min-w-[120px]">
+                <div className="text-2xl font-bold gradient-text">{stat.value}</div>
+                <div className="text-xs text-muted mt-1">{stat.label}</div>
+              </div>
+            ))}
           </motion.div>
 
           {/* CTA Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.9, duration: 0.8 }}
+            transition={{ delay: 0.75, duration: 0.8 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
           >
             <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              whileHover={{ scale: 1.04 }}
+              whileTap={{ scale: 0.97 }}
               onClick={() => scrollToSection('#projects')}
-              className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-semibold flex items-center gap-2 shadow-lg hover:shadow-xl transition-all duration-300"
+              className="btn-primary"
             >
               View My Projects
-              <ArrowRight size={20} />
+              <ArrowRight size={18} />
             </motion.button>
-            
+
             <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              href="/Amr-Elsawalhi-Resume.pdf"
-              download="Amr-Elsawalhi-Resume.pdf"
+              whileHover={{ scale: 1.04 }}
+              whileTap={{ scale: 0.97 }}
+              href="/Amr-Elsawalhi-DE.pdf"
+              download="Amr-Elsawalhi-DE.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-full font-semibold flex items-center gap-2 hover:bg-blue-600 hover:text-white transition-all duration-300"
+              className="btn-outline"
             >
-              <Download size={20} />
+              <Download size={18} />
               Download Resume
             </motion.a>
           </motion.div>
 
           {/* Social Links */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.1, duration: 0.8 }}
-            className="flex justify-center items-center gap-6"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.9, duration: 0.8 }}
+            className="flex justify-center items-center gap-4 mb-14"
           >
-            <motion.a
-              whileHover={{ scale: 1.1, y: -2 }}
-              href="https://github.com/amrelsawalhi"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-200"
-            >
-              <Github size={24} className="text-gray-700" />
-            </motion.a>
-            
-            <motion.a
-              whileHover={{ scale: 1.1, y: -2 }}
-              href="https://www.linkedin.com/in/amrelsawalhi/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-200"
-            >
-              <Linkedin size={24} className="text-gray-700" />
-            </motion.a>
-            
-            <motion.a
-              whileHover={{ scale: 1.1, y: -2 }}
-              href="mailto:amr.elsawalhi.business@gmail.com"
-              className="p-3 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-200"
-            >
-              <Mail size={24} className="text-gray-700" />
-            </motion.a>
+            {[
+              { href: 'https://github.com/amrelsawalhi', icon: <Github size={20} />, label: 'GitHub' },
+              { href: 'https://www.linkedin.com/in/amrelsawalhi/', icon: <Linkedin size={20} />, label: 'LinkedIn' },
+              { href: 'mailto:amr.elsawalhi.business@gmail.com', icon: <Mail size={20} />, label: 'Email' },
+            ].map(({ href, icon, label }) => (
+              <motion.a
+                key={label}
+                whileHover={{ scale: 1.12, y: -2 }}
+                href={href}
+                target={href.startsWith('mailto') ? undefined : '_blank'}
+                rel="noopener noreferrer"
+                className="glass-card p-3 text-slate-400 hover:text-cyan-400 transition-colors duration-200"
+                title={label}
+              >
+                {icon}
+              </motion.a>
+            ))}
           </motion.div>
 
-          {/* Location */}
+          {/* Location + scroll hint */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1.3, duration: 0.8 }}
-            className="mt-8 text-gray-500"
+            transition={{ delay: 1.1, duration: 0.8 }}
+            className="text-muted text-sm"
           >
             📍 Cairo, Egypt
           </motion.div>
         </motion.div>
       </div>
+
+      {/* Scroll indicator */}
+      <motion.button
+        onClick={() => scrollToSection('#about')}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-slate-500 hover:text-cyan-400 transition-colors animate-bounce"
+      >
+        <ChevronDown size={28} />
+      </motion.button>
     </section>
   );
 };
 
 export default Hero;
-

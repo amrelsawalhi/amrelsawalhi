@@ -3,263 +3,183 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Briefcase, MapPin, Calendar, TrendingUp, Award } from 'lucide-react';
+import { Briefcase, MapPin, Calendar, GraduationCap } from 'lucide-react';
 
 const Experience = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, margin: '-100px' });
 
-  const experience = [
+  const jobs = [
     {
-      title: "Medical Representative",
-      company: "Pharmaceutical Industry",
-      duration: "2015 - 2023",
-      location: "Egypt & Saudi Arabia",
-      description: "8+ years of international pharmaceutical sales experience with deep understanding of healthcare markets and customer relationships.",
+      title: 'Independent Data Engineer & Analyst',
+      company: 'Freelance',
+      location: 'Cairo, Egypt',
+      duration: '06/2025 – Present',
+      current: true,
+      description: 'Building end-to-end data solutions for clients — from ELT pipeline design and warehouse modeling to AI integrations and dashboard delivery.',
       achievements: [
-        "Managed customer relationships across diverse healthcare markets",
-        "Analyzed sales data and market trends for business intelligence",
-        "Provided competitive intelligence and market analysis",
-        "Worked with CRM systems and sales data analytics",
-        "Developed understanding of customer needs and market dynamics"
+        'Architected resilient Dagster ELT pipelines ingesting diverse data sources (APIs, RSS feeds, databases)',
+        'Designed PostgreSQL Star Schema warehouses optimized for analytical query performance',
+        'Integrated Google Gemini AI agents to automate daily data workflows and reduce operational overhead',
+        'Built Streamlit admin panels for pipeline monitoring, data freshness tracking, and SQL execution',
+        'Deployed production dashboards consumed by end stakeholders via Power BI and web apps',
       ],
-      skills: ["Sales Management", "Customer Relations", "Market Analysis", "Data Analytics", "International Business"]
-    }
+      tags: ['Dagster', 'PostgreSQL', 'Python', 'Gemini AI', 'Streamlit', 'Power BI'],
+      color: 'cyan',
+    },
+    {
+      title: 'Business Intelligence Analytics',
+      company: 'AJA',
+      location: 'Saudi Arabia',
+      duration: '03/2024 – 03/2025',
+      current: false,
+      description: 'Led BI reporting infrastructure development, building data workflows and dashboards to support enterprise-level decision-making.',
+      achievements: [
+        'Developed company-wide BI reporting layer connecting operational systems to decision-makers',
+        'Automated data collection and transformation workflows reducing manual reporting effort',
+        'Built interactive Power BI dashboards tracking key business KPIs across departments',
+        'Collaborated with stakeholders to define data requirements and translate them into analytics solutions',
+      ],
+      tags: ['Power BI', 'SQL', 'Python', 'Data Modeling', 'ETL'],
+      color: 'violet',
+    },
+    {
+      title: 'Senior Product Specialist',
+      company: 'AJA',
+      location: 'Saudi Arabia',
+      duration: '2018 – 2024',
+      current: false,
+      description: 'Led product strategy and market analytics across the Saudi Arabia region. Built analytical frameworks for sales intelligence and business insights.',
+      achievements: [
+        'Managed strategic accounts and analyzed market data to drive territory growth',
+        'Built sales intelligence frameworks and CRM analytics for regional decision-making',
+        'Led cross-functional teams in product launches backed by data-driven market research',
+        'Delivered competitive intelligence reports influencing product-market positioning',
+      ],
+      tags: ['Market Analysis', 'Sales Intelligence', 'CRM Analytics', 'Strategic Planning'],
+      color: 'violet',
+    },
+    {
+      title: 'Senior Medical Representative',
+      company: 'IBSA',
+      location: 'Egypt',
+      duration: '2014 – 2017',
+      current: false,
+      description: 'Managed key accounts and territory analytics in the Egyptian pharmaceutical market.',
+      achievements: [
+        'Managed key healthcare accounts across the assigned territory',
+        'Conducted market and competitor analysis to support field strategy',
+        'Consistently exceeded sales targets through data-informed customer engagement',
+      ],
+      tags: ['Account Management', 'Market Analysis', 'Business Development'],
+      color: 'violet',
+    },
   ];
 
-  const careerTransition = {
-    title: "Career Transition to Data Analysis",
-    duration: "2023 - Present",
-    description: "Self-directed learning journey in programming and data analysis, uncovering business insights while leveraging healthcare business experience.",
-    achievements: [
-      "Self-taught programming in Python and SQL",
-      "Built comprehensive data analysis projects from concept to insights",
-      "Earned DataCamp Data Engineer and Data Engineer Associate certifications",
-      "Developed understanding of data analysis, visualization, and business intelligence",
-      "Created data-driven insights with modern analytical tools"
-    ],
-    skills: ["Python", "SQL", "Data Analysis", "Data Visualization", "Business Intelligence"]
+  const education = {
+    degree: 'Bachelor of Pharmacy',
+    school: 'Zagazig University',
+    graduated: 'July 2014',
+    location: 'Egypt',
   };
 
-  const targetRoles = [
-    {
-      title: "Data Analyst",
-      description: "Analyzing data to provide actionable insights for healthcare/pharma companies",
-      icon: <TrendingUp className="w-6 h-6" />
-    },
-    {
-      title: "Business Intelligence Analyst",
-      description: "Creating data visualizations, dashboards, and business intelligence solutions",
-      icon: <TrendingUp className="w-6 h-6" />
-    },
-    {
-      title: "Customer Analytics Specialist",
-      description: "Leveraging customer data to drive business strategy and market insights",
-      icon: <TrendingUp className="w-6 h-6" />
-    },
-    {
-      title: "Healthcare Data Analyst",
-      description: "Applying pharmaceutical business knowledge to healthcare data analysis",
-      icon: <TrendingUp className="w-6 h-6" />
-    }
-  ];
-
   return (
-    <section id="experience" className="section-padding bg-slate-50">
-      <div className="container-max">
+    <section id="experience" className="section-padding relative overflow-hidden" style={{ background: '#070d1a' }}>
+      <div className="bg-glow w-[500px] h-[500px] bg-cyan-600 top-1/2 left-[-200px]" style={{ opacity: 0.06 }} />
+
+      <div className="container-max relative z-10">
+        {/* Header */}
         <motion.div
           ref={ref}
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          transition={{ duration: 0.7 }}
+          className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="gradient-text">Experience & Goals</span>
+          <span className="chip mb-4 inline-block">Work History</span>
+          <h2 className="section-title mb-5">
+            <span className="gradient-text">Experience</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            From healthcare sales to data engineering - leveraging business experience for technical solutions
+          <p className="text-muted text-lg max-w-2xl mx-auto">
+            From enterprise business to data engineering — a proven track record of delivering value through data.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Professional Experience */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ delay: 0.2, duration: 0.8 }}
-          >
-            <h3 className="text-3xl font-bold mb-8 text-gray-800">
-              Professional Experience
-            </h3>
-            
-            {experience.map((exp, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: 0.4 + index * 0.2, duration: 0.6 }}
-                className="bg-white rounded-xl p-6 shadow-lg border border-gray-200 mb-6"
-              >
-                <div className="flex items-start justify-between mb-4">
+        {/* Job Cards */}
+        <div className="space-y-6 mb-16">
+          {jobs.map((job, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 0.15 + i * 0.12, duration: 0.6 }}
+              className="glass-card p-6 md:p-8 hover:border-cyan-500/20 transition-all duration-300 group"
+            >
+              {/* Top row */}
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-5">
+                <div className="flex items-start gap-4">
+                  <div className={`w-11 h-11 rounded-xl flex items-center justify-center text-white flex-shrink-0 ${job.current
+                      ? 'bg-gradient-to-br from-cyan-500 to-cyan-600'
+                      : 'bg-gradient-to-br from-violet-600 to-violet-700'
+                    }`}>
+                    <Briefcase className="w-5 h-5" />
+                  </div>
                   <div>
-                    <h4 className="text-xl font-bold text-gray-800 mb-1">
-                      {exp.title}
-                    </h4>
-                    <p className="text-gray-600 font-medium">
-                      {exp.company}
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <h3 className="text-lg font-bold text-bright">{job.title}</h3>
+                      {job.current && <span className="chip" style={{ fontSize: '0.65rem' }}>● Current</span>}
+                    </div>
+                    <p className={`font-semibold text-sm mt-0.5 ${job.current ? 'text-cyan-400' : 'text-violet-400'}`}>
+                      {job.company}
                     </p>
                   </div>
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center text-white">
-                    <Briefcase className="w-6 h-6" />
-                  </div>
                 </div>
-
-                <div className="flex items-center gap-4 mb-4 text-sm text-gray-500">
-                  <div className="flex items-center gap-1">
-                    <Calendar className="w-4 h-4" />
-                    {exp.duration}
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <MapPin className="w-4 h-4" />
-                    {exp.location}
-                  </div>
-                </div>
-
-                <p className="text-gray-700 mb-4 leading-relaxed">
-                  {exp.description}
-                </p>
-
-                <div className="mb-4">
-                  <h5 className="font-semibold text-gray-800 mb-2">Key Achievements:</h5>
-                  <ul className="space-y-1">
-                    {exp.achievements.map((achievement, idx) => (
-                      <li key={idx} className="text-sm text-gray-600 flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                        {achievement}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div>
-                  <h5 className="font-semibold text-gray-800 mb-2">Skills Developed:</h5>
-                  <div className="flex flex-wrap gap-2">
-                    {exp.skills.map((skill, idx) => (
-                      <span
-                        key={idx}
-                        className="text-xs bg-blue-50 text-blue-700 px-3 py-1 rounded-full"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
-
-          {/* Career Transition */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ delay: 0.4, duration: 0.8 }}
-          >
-            <h3 className="text-3xl font-bold mb-8 text-gray-800">
-              Career Transition
-            </h3>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.6, duration: 0.6 }}
-              className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-6 border border-blue-200 mb-8"
-            >
-              <div className="flex items-start justify-between mb-4">
-                <div>
-                  <h4 className="text-xl font-bold text-gray-800 mb-1">
-                    {careerTransition.title}
-                  </h4>
-                  <p className="text-gray-600 font-medium">
-                    Self-Directed Learning
-                  </p>
-                </div>
-                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-teal-600 rounded-lg flex items-center justify-center text-white">
-                  <Award className="w-6 h-6" />
+                <div className="flex items-center gap-4 text-xs text-muted flex-shrink-0">
+                  <span className="flex items-center gap-1.5"><Calendar className="w-3.5 h-3.5" />{job.duration}</span>
+                  <span className="flex items-center gap-1.5"><MapPin className="w-3.5 h-3.5" />{job.location}</span>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 mb-4 text-sm text-gray-500">
-                <div className="flex items-center gap-1">
-                  <Calendar className="w-4 h-4" />
-                  {careerTransition.duration}
-                </div>
-              </div>
+              <p className="text-muted text-sm mb-5 leading-relaxed">{job.description}</p>
 
-              <p className="text-gray-700 mb-4 leading-relaxed">
-                {careerTransition.description}
-              </p>
+              {/* Achievements */}
+              <ul className="space-y-2 mb-5">
+                {job.achievements.map((a, idx) => (
+                  <li key={idx} className="flex items-start gap-2.5 text-sm text-slate-400">
+                    <span className={`mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0 ${job.current ? 'bg-cyan-400' : 'bg-violet-400'}`} />
+                    {a}
+                  </li>
+                ))}
+              </ul>
 
-              <div className="mb-4">
-                <h5 className="font-semibold text-gray-800 mb-2">Key Achievements:</h5>
-                <ul className="space-y-1">
-                  {careerTransition.achievements.map((achievement, idx) => (
-                    <li key={idx} className="text-sm text-gray-600 flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
-                      {achievement}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div>
-                <h5 className="font-semibold text-gray-800 mb-2">Technical Skills:</h5>
-                <div className="flex flex-wrap gap-2">
-                  {careerTransition.skills.map((skill, idx) => (
-                    <span
-                      key={idx}
-                      className="text-xs bg-green-50 text-green-700 px-3 py-1 rounded-full"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
+              {/* Tags */}
+              <div className="flex flex-wrap gap-2">
+                {job.tags.map((tag) => (
+                  <span key={tag} className={job.current ? 'chip' : 'chip chip-violet'} style={{ fontSize: '0.7rem' }}>
+                    {tag}
+                  </span>
+                ))}
               </div>
             </motion.div>
-          </motion.div>
+          ))}
         </div>
 
-        {/* Target Roles */}
+        {/* Education */}
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.8, duration: 0.8 }}
-          className="mt-20"
+          transition={{ delay: 0.7, duration: 0.6 }}
         >
-          <h3 className="text-3xl font-bold text-center mb-12 text-gray-800">
-            Target Roles
-          </h3>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {targetRoles.map((role, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: 1 + index * 0.1, duration: 0.6 }}
-                className="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300"
-              >
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center text-white mb-4">
-                  {role.icon}
-                </div>
-                <h4 className="text-lg font-semibold text-gray-800 mb-2">
-                  {role.title}
-                </h4>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {role.description}
-                </p>
-              </motion.div>
-            ))}
+          <h3 className="text-xl font-bold text-bright mb-6">Education</h3>
+          <div className="glass-card p-6 flex items-center gap-5">
+            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500/20 to-violet-600/20 border border-cyan-500/20 flex items-center justify-center text-cyan-400 flex-shrink-0">
+              <GraduationCap className="w-6 h-6" />
+            </div>
+            <div>
+              <h4 className="font-bold text-bright">{education.degree}</h4>
+              <p className="text-cyan-400 text-sm font-medium">{education.school}</p>
+              <p className="text-muted text-xs mt-1">{education.graduated} · {education.location}</p>
+            </div>
           </div>
         </motion.div>
       </div>
