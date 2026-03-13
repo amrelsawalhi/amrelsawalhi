@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Amr El Sawalhi
 
-**BI Analytics Professional**
+**Data Engineer**
 
 I build business intelligence solutions and uncover actionable insights with a unique perspective from 8+ years in pharmaceutical sales. My background gives me deep insights into customer needs and market dynamics.
 
@@ -25,4 +25,4 @@ I build business intelligence solutions and uncover actionable insights with a u
 
 ---
 
-*Healthcare business professional transitioning to BI analytics with international experience.*
+*Data Engineer with international experience.*
