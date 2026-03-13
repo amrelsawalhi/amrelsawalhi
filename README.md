@@ -13,8 +13,10 @@ I build business intelligence solutions and uncover actionable insights with a u
 
 ## 🛠 Skills
 
-**BI Analytics:** Python, SQL, Data Analysis, Data Visualization  
+**BI Analytics:** Python, SQL, Data Analysis, Data Visualization
+
 **Tools:** PostgreSQL, Power BI, Streamlit, Git, Open Metadata
+
 **Business:** Market Analysis, Customer Relations, Business Intelligence
 
 ## 📫 Connect
